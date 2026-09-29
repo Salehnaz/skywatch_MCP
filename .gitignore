@@ -1,0 +1,49 @@
+# --- Secrets — never commit ---
+credentials.json
+credentials.json.bak
+*.credentials.json
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.token
+
+# --- Claude Code local settings (leak absolute paths) ---
+.claude/
+CLAUDE.local.md
+
+# --- Local data (large, downloadable, or generated) ---
+aircraft_db.sqlite
+aircraft_db.sqlite-journal
+aircraft_db.sqlite-wal
+aircraft_db.sqlite-shm
+data/*.csv
+data/*.csv.gz
+data/*.parquet
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+*.egg-info/
+build/
+dist/
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
